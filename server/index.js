@@ -18,6 +18,6 @@ server.use(jsonServer.bodyParser)
 
 // Use default router
 server.use(router)
-server.listen(3000, () => {
-  console.log('JSON Server is running port 3000')
+server.listen(3001, () => {
+  console.log('JSON Server is running port 3001')
 })
