@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: flex-start;
     flex: 3;
+    height: 4rem;
 }
 
 .patient-card-item__properties h2 {

@@ -1,5 +1,6 @@
 import "./PatientCardItem.css";
 import CardArrhythmias from "./CardArrhythmias";
+import CardButtons from "./CardButtons";
 
 function PatientCardItem(props) {
 
@@ -12,6 +13,7 @@ function PatientCardItem(props) {
         <p>{formattedDate}</p>
         <p>{props.arrhythmias || "-"}</p>
         <CardArrhythmias arrhythmias=""></CardArrhythmias>
+        <CardButtons status={props.status}></CardButtons>
       </div>
     </div>
   );

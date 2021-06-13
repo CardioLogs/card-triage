@@ -23,8 +23,8 @@ function App() {
       <h2 className="subtitle">Organize your patients cards</h2>
       <div className="search"><SearchBar></SearchBar></div>
       <div className="cards-lists">
-        <PatientCardsList name="Cards to treat"></PatientCardsList>
-        <PatientCardsList name="Treated cards"></PatientCardsList>
+        <PatientCardsList name="Pending cards" status="pending"></PatientCardsList>
+        <PatientCardsList name="Treated cards" status="treated"></PatientCardsList>
       </div>
     </div>
   );
