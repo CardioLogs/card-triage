@@ -2,6 +2,6 @@
     width : 40vw;
 }
 
-.search-bar .input-group-text {
-    background-color: white;
+.search-bar span {
+    background-color: transparent;
 }

@@ -1,34 +1,30 @@
 .patient-card-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.2rem;
-    width : 98%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.2rem;
+  height: 6rem;
+}
+
+.patient-card-item__id {
+  flex: 1;
+}
+
+.patient-card-item__name {
+  font-size: medium;
+  flex: 4;
+}
+
+.patient-card-item__date {
+  flex: 3;
+}
+
+@media (max-width: 800px) {
+  .patient-card-item__id {
+    display: none;
   }
-
-.patient-card-item h2 {
-    flex: 1;
-    font-size: medium;
-}
-
-.patient-card-item p {
-    flex: 1;
-    font-size: small;
-    margin: 0;
-    padding: 0;
-}
-  
-.patient-card-item__properties {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    justify-content: flex-start;
-    flex: 3;
-    height: 4rem;
-}
-
-.patient-card-item__properties h2 {
-    flex: 1;
-    margin: 0 1rem;
+  .patient-card-item__date {
+    display: none;
+  }
 }

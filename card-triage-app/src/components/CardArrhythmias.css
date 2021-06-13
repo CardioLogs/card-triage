@@ -1,0 +1,6 @@
+.card-arrhythmias {
+    flex: 3;
+    overflow-wrap: break-word;
+    width: 8rem;
+    margin: 0.5rem 0 0.5rem 0;
+}

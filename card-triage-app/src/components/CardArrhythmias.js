@@ -3,9 +3,9 @@ import "./CardArrhythmias.css";
 function CardArrhythmias(props) {
 
   return (
-    <p>
+    <div className="card-arrhythmias">
         {props.arrhythmias.join(", ")}
-    </p>
+    </div>
   );
 }
 

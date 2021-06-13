@@ -8,18 +8,18 @@ function PatientCardItem(props) {
     : "-";
   return (
     <div className="patient-card-item list-group-item py-3 lh-tight shadow-sm">
-      <h2 className="patient-card-item__name">{props.pName || "Unknown"}</h2>
-      <div className="patient-card-item__properties">
-        <p>{props.id || "-"}</p>
-        <p>{formattedDate}</p>
-        <CardArrhythmias arrhythmias={props.arrhythmias || []}></CardArrhythmias>
-        <CardButtons
-          status={props.status}
-          id={props.id}
-          allCards={props.allCards}
-          setAllCards={props.setAllCards}
-        ></CardButtons>
-      </div>
+      <div className="patient-card-item__id">{props.id}</div>
+      <div className="patient-card-item__name"><b>{props.pName || "Unknown"}</b></div>
+      <div className="patient-card-item__date">{formattedDate}</div>
+      <CardArrhythmias
+        arrhythmias={props.arrhythmias || []}
+      ></CardArrhythmias>
+      <CardButtons
+        status={props.status}
+        id={props.id}
+        allCards={props.allCards}
+        setAllCards={props.setAllCards}
+      ></CardButtons>
     </div>
   );
 }
