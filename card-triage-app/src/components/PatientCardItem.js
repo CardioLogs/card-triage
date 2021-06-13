@@ -12,8 +12,7 @@ function PatientCardItem(props) {
       <div className="patient-card-item__properties">
         <p>{props.id || "-"}</p>
         <p>{formattedDate}</p>
-        <p>{props.arrhythmias || "-"}</p>
-        <CardArrhythmias arrhythmias=""></CardArrhythmias>
+        <CardArrhythmias arrhythmias={props.arrhythmias || []}></CardArrhythmias>
         <CardButtons
           status={props.status}
           id={props.id}

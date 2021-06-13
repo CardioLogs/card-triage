@@ -66,6 +66,3 @@
 	  }
 	]
 }
-
-
-  onClick = {() => {props.setAllCards([])}}
