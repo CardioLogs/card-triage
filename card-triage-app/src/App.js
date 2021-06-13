@@ -5,8 +5,9 @@ import PatientCardsList from "./components/PatientCardsList";
 function App() {
   return (
     <div className="App">
-      <h1>Patients cards</h1>
-      <h2>Organize your patients cards</h2>
+      <h1 className="title">Patients cards</h1>
+      <h2 className="subtitle">Organize your patients cards</h2>
+      <div className="search">search area</div>
       <div className="cards-lists">
           <PatientCardsList></PatientCardsList>
           <PatientCardsList></PatientCardsList>

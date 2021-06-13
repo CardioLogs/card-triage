@@ -1,20 +1,22 @@
-
 .cards-list {
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+  flex: 1;
+  display: grid;
+  grid-template-areas: "head" "elts";
+  grid-template-rows: 3rem auto;
+  align-items: stretch;
+  text-align: center;
 }
 
 .cards-list__head {
-    height: 2rem;
-    background-color: #53b1a9;
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
+  grid-area: "head";
+  background-color: #53b1a9;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .list-group {
-    border: 1px solid #53b1a9;
-    border-bottom-left-radius: .25rem;
-    border-bottom-right-radius: .25rem;
+  grid-area: "elts";
+  /* border: 1px solid #53b1a9; */
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
