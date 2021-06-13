@@ -30,7 +30,7 @@ class App extends Component {
         <h1 className="title">Patients cards</h1>
         <h2 className="subtitle">Organize your patients cards</h2>
         <div className="search">
-          <SearchBar></SearchBar>
+          <SearchBar setAllCards={setAllCards}></SearchBar>
         </div>
         <div className="cards-lists">
           <PatientCardsList
