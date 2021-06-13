@@ -20,43 +20,41 @@ function CardButtons(props) {
     updateStatusAndList("REJECTED");
   };
 
-  const setTreated = () => {
-    updateStatusAndList("TREATED");
+  const setDone = () => {
+    updateStatusAndList("DONE");
   };
 
   const setPending = () => {
     updateStatusAndList("PENDING");
   };
 
-  if (status === "PENDING") {
-    return (
-      <div className="card-buttons">
-        <button
-          type="button"
-          className="btn btn-outline-success"
-          onClick={setTreated}
-        >
-          <i className="bi bi-check"></i>
-        </button>
+  return (
+    <div className="card-buttons">
+      <button
+        type="button"
+        className={"btn btn-outline-success" + (status === "DONE" ? " active" : "")}
+        onClick={setDone}
+      >
+        <i className="bi bi-check"></i>
+      </button>
 
-        <button
-          type="button"
-          className="btn btn-outline-danger"
-          onClick={setRejected}
-        >
-          <i className="bi bi-x"></i>
-        </button>
-      </div>
-    );
-  } else {
-    return (
-      <div className="card-buttons" onClick={setPending}>
-        <button type="button" className="btn btn-outline-secondary">
-          <i className="bi bi-hourglass"></i>
-        </button>
-      </div>
-    );
-  }
+      <button
+        type="button"
+        className={"btn btn-outline-danger" + (status === "REJECTED" ? " active" : "")}
+        onClick={setRejected}
+      >
+        <i className="bi bi-x"></i>
+      </button>
+
+      <button
+        type="button"
+        className={"btn btn-outline-secondary" + (status === "PENDING" ? " active" : "")}
+        onClick={setPending}
+      >
+        <i className="bi bi-hourglass"></i>
+      </button>
+    </div>
+  );
 }
 
 export default CardButtons;

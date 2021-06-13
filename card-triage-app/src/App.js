@@ -15,7 +15,6 @@ class App extends Component {
     .then(res => res.json())
     .then((data) => {
       this.setState({ allCards: data })
-      console.log("1 " + data);
     })
     .catch(console.log)
   }
@@ -23,11 +22,9 @@ class App extends Component {
   render() {
 
     const setAllCards = (newCards) => {
-      console.log("2 " + newCards);
       this.setState({ allCards: newCards })
     }
 
-    console.log("3 " + this.state.allCards);
     return (
       <div className="App">
         <h1 className="title">Patients cards</h1>

@@ -7,9 +7,11 @@ function PatientCardsList(props) {
     filteredCards = props.allCards.filter((card) => card.status === "PENDING");
   } else {
     filteredCards = props.allCards.filter(
-      (card) => card.status === "TREATED" || card.status === "REJECTED"
+      (card) => card.status === "DONE" || card.status === "REJECTED"
     );
   }
+
+  filteredCards = filteredCards.sort((a, b) => a.created_date > b.created_date)
 
   return (
     <div className="cards-list shadow">
