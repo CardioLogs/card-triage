@@ -10,6 +10,8 @@
 .cards-list__head {
   grid-area: "head";
   background-color: #53b1a9;
+  color: white;
+  font-weight: 600;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }

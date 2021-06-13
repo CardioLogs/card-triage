@@ -3,7 +3,7 @@
   grid-gap: 0.5rem;
   padding: 0.5rem;
   grid-template-areas: "title-area" "subtitle-area" "search-area" "body-area";
-  grid-template-rows: 10vh 5vh 5vh 80vh;
+  grid-template-rows: 10vh 5vh 10vh 75vh;
   align-items: start;
   text-align: center;
   height: 100vh;
@@ -18,7 +18,8 @@
 }
 .App .search {
   grid-area: "search-area";
-  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .cards-lists {
