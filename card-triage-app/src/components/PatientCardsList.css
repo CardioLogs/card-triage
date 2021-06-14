@@ -1,0 +1,24 @@
+.cards-list {
+  flex: 1;
+  display: grid;
+  grid-template-areas: "head" "elts";
+  grid-template-rows: 3rem auto;
+  align-items: stretch;
+  text-align: center;
+}
+
+.cards-list__head {
+  grid-area: "head";
+  background-color: #53b1a9;
+  color: white;
+  font-weight: 600;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.list-group {
+  grid-area: "elts";
+  /* border: 1px solid #53b1a9; */
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}

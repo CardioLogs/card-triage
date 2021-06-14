@@ -1,0 +1,30 @@
+.patient-card-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.2rem;
+  height: 6rem;
+}
+
+.patient-card-item__id {
+  flex: 1;
+}
+
+.patient-card-item__name {
+  font-size: medium;
+  flex: 4;
+}
+
+.patient-card-item__date {
+  flex: 3;
+}
+
+@media (max-width: 800px) {
+  .patient-card-item__id {
+    display: none;
+  }
+  .patient-card-item__date {
+    display: none;
+  }
+}
