@@ -64,10 +64,14 @@ Here is a simple instruction on how to set up your local server for the project
 1. First, install the node dependencies
     `npm install`
 
-2. Run the local API server
-    `npm run api`
+2. Setup your app
 
-3. With everything set up, you can now access the list of cards with the following URL:
+    You can use any project generator you want, the only requirement is to place sources under `./app` and having a `start` script inside of the `package.json` file
+
+3. Run the local API server and your app script
+    `npm start`
+
+4. With everything set up, you can now access the list of cards with the following URL:
     `GET http://localhost:3000/cards`
 
 
