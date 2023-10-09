@@ -1,0 +1,28 @@
+.root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 70px;
+  padding: 8px;
+  gap: 8px;
+
+  background: white;
+  border-radius: 4px;
+
+  cursor: move;
+
+  .patientName {
+    font-weight: 700;
+  }
+
+  &.pending {
+    border-left: 8px solid blue;
+  }
+  &.done {
+    border-left: 8px solid green;
+  }
+  &.rejected {
+    border-left: 8px solid red;
+  }
+}

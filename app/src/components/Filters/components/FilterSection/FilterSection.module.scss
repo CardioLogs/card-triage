@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 8px;
+    padding: 8px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+
+    background-color: #f4f5f7;
+    border-radius: 4px;
+
+    .svgContainer {
+      width: 18px;
+      height: 18px;
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+      transform: rotate(45deg);
+      transition: all 0.2s ease-out;
+      &:hover {
+        cursor: pointer;
+      }
+      &.isClicked {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-rows: 0fr;
+    margin-left: 8px;
+    transition: grid-template-rows 0.2s ease-out;
+
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      overflow: hidden;
+    }
+
+    &.isExpanded {
+      grid-template-rows: 1fr;
+    }
+  }
+}
