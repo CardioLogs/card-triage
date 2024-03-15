@@ -12,9 +12,7 @@ In all this 3 options it is important for us to have access of your technical in
 The goal is for all of us to learn from each others.  
 
 ## Share with us
-If you are using a private repository on GitHub, add us as a collaborator ([`baptooo`](https://github.com/baptooo) and [`georgios-mavroudis`](https://github.com/georgios-mavroudis)) so we can read your code.
-
-Otherwise share us your code in a zip file ( using this `git archive --format zip --output /full/path/to/zipfile.zip master` )
+Please execute the command `yarn archive` to generate a file named `homework.zip`, which you can then share with us in response to the initial email.
 
 # Option 1: Coding
 
