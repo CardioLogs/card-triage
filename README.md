@@ -12,7 +12,7 @@ In all this 3 options it is important for us to have access of your technical in
 The goal is for all of us to learn from each others.  
 
 ## Share with us
-Please execute the command `yarn archive` to generate a file named `homework.zip`, which you can then share with us in response to the initial email.
+Please execute the command `yarn|npm run|pnpm run archive` to generate a file named `homework.zip`, which you can then share with us in response to the initial email.
 
 # Option 1: Coding
 
