@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "api": "npm start --workspace=server",
-    "start": "concurrently \"npm run api\" \"npm start --workspace=app --if-present\""
+    "start": "concurrently \"npm run api\" \"npm start --workspace=app --if-present\"",
+    "archive": "git archive --format zip --output homework.zip master"
   },
   "author": "",
   "license": "ISC",
