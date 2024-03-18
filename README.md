@@ -103,6 +103,6 @@ Please don't forget to share your **code**, functions or anything related so we 
 ![alt text][sponge]
 
 
-[design]: https://github.com/CardioLogs/card-triage/raw/master/images/design.png
-[sponge]: https://github.com/CardioLogs/card-triage/raw/master/images/sponge.gif
-[rabbit]: https://github.com/CardioLogs/card-triage/raw/master/images/wonderland.gif
+[design]: https://github.com/CardioLogs/card-triage/raw/main/images/design.png
+[sponge]: https://github.com/CardioLogs/card-triage/raw/main/images/sponge.gif
+[rabbit]: https://github.com/CardioLogs/card-triage/raw/main/images/wonderland.gif
